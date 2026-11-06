@@ -1,11 +1,14 @@
 import student
+
 print("Welcome to Student Management System")
+
 while True:
     print("\n--- STUDENT MANAGEMENT SYSTEM ---")
     print("1. Add Student")
     print("2. Display Students")
     print("3. Search Student")
-    print("4. Exit")
+    print("4. Delete Student")
+    print("5. Exit")
 
     choice = input("Enter your choice: ")
 
@@ -19,6 +22,9 @@ while True:
         student.search_student()
 
     elif choice == "4":
+        student.delete_student()
+
+    elif choice == "5":
         print("Exiting program...")
         break
 
