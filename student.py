@@ -46,3 +46,20 @@ def delete_student():
             return
 
     print("Student not found.")
+    
+def update_student():
+    roll = input("Enter Roll Number to update: ")
+
+    for student in students:
+        if student["roll"] == roll:
+            name = input("Enter New Name: ")
+            age = input("Enter New Age: ")
+
+            student["name"] = name
+            student["age"] = age
+
+            print("Student details updated successfully!")
+            return
+
+    print("Student not found.")
+    
